@@ -9,7 +9,7 @@
     <title>购买ESCH</title>
      <link href="Css/mobilemain.css" rel="stylesheet" />
     <script src="JS/jquery.js"></script>
-    <script src="JS/web3.min.js"></script>
+    <script src="JS/web3.js"></script>
     <script src="JS/public.js"></script>
 </head>
 <body>
@@ -39,8 +39,9 @@
         </div>
     </div>
 <script>
-    window.addEventListener('load', function () {
+    //window.addEventListener('load', function () {
 
+$(function(){
 
         web3.eth.getAccounts(function (err, accounts) {
             if (accounts.length == 0) {
